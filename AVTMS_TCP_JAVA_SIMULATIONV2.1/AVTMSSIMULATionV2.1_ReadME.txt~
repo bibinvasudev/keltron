@@ -1,0 +1,70 @@
+
+******************************************************************
+/*								*/
+/*	AVTMS SIMULATION WORKING DOCUMENTATION 		        */
+/*								*/
+/*								*/
+/*	Description:						*/
+/*	-------------------------------------------		*/
+/*	PROJECT : AUTOMATIC VEHICLE TRACKING AND                */
+/*			MONITORING SYSTEM SIMULATION            */
+/*			SYSTEM SERVER SIMULATION		*/
+/*	VERSION : 2.1 ( For Linux )				*/
+/*	LANGUAGE: Python                 			*/
+/*      DATE	: 28th AUGUST 2008				*/
+/*	AUTHOR	: BIBIN VASUDEV					*/
+/*	-------------------------------------------		*/
+/*								*/
+******************************************************************
+
+
+IMPORTANT :	1.Read the instructions carefully
+		2.Do proper changes as specified
+
+                
+ 
+	Thank you !!!!
+
+**************************************************************************************
+
+
+
+1.Copy avtmssimulationv2.1 to your system. Packet contains
+
+	---# 	avtms.py
+	---# 	alert.py
+	---# 	avtmscorehalf.py
+	---# 	avtmscorefull.py
+
+2. Check if Python is installed by just typing "whereis python" or "which python"
+		if you get "comand not found", install python
+3. Check if Postgres is installed by just typing "which psql"
+		if you get "commad not found",install postgresql-client
+4. Check if psycopg2 is installed by just typing "pg_config"
+		if you get "comand not found",install psycopg2
+5  Check if wxWidget is installed by just typing "wx-config"
+		if you get "comand not found",install python-wxglade
+
+7. AVTMS Simulation working
+
+	---#    avtms.py          :- Establishing a connection with the avtms server
+				     Extracting the file path  
+				     Starting the mode of operation(half mode, full mode)
+				     
+			          
+	---#    alert.py         :- Shows the alert messages 
+	---#    avtmscorehalf.py :- Resolve the file and find the upcoming points based on speed , position and 				    time . you can put time intervel , according to that avtmscorehalf.py will find the 				    new poition for that time intervel and send packet to avtmas server. The packet format 					    contains longitude ,latitude,utc time,utc date etc 
+				    This process repeat will repeat at the end of the path specified
+	---#    avtmscorefull.py :- Resolve the file and find the upcoming points based on speed , position and 				    time . you can put time intervel , according to that avtmscorehalf.py will find the 				    new poition for that time intervel and send packet to avtmas server. The packet format 					    contains longitude ,latitude,utc time,utc date etc .This process repeat will repeat 				    for a continuous intervel	
+				    	
+
+8. How to run AVTMS SIMULATION 
+
+
+	---# 	root@user-desktop:/python avtms.py
+
+
+
+
+/******** END OF DOCUMENT *****************************************/
+	

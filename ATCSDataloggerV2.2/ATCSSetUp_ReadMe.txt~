@@ -1,0 +1,54 @@
+
+******************************************************************
+/*								*/
+/*	ATCSDATALOGGER INSTALLATION DOCUMENTATION       	*/
+/*								*/
+/*								*/
+/*	Description:						*/
+/*	-------------------------------------------		*/
+/*	PROJECT : AREA TRAFFIC CONTROLL SYSTEM	DATALOGGER	*/
+/*	VERSION : 1 ( For Linux )				*/
+/*      DATE	: 5th DEC 2008	
+	AUTHOR  : Bibin.V				        */
+/*				                                */
+/*	-------------------------------------------		*/
+/*								*/
+******************************************************************
+
+
+IMPORTANT :	1.Read the instructions carefully
+		2.You should follow the step numbers in the respective order itself
+		3.Now start your installation
+                
+ 
+	Thank you !!!!
+
+**************************************************************************************
+
+
+
+1. Copy ATCSDatalogger to /opt 
+
+2. Check whether JDK 1.5 or higher version installed or not by typing "java -version" in terminal
+
+3. If need ,set path for Java by
+
+	editing  the /etc/environment file 
+
+4. Configure ./ATCSDatalogger/config/DATALOGGER.xml for connecting to  ATCSServer,ATCSDatabase 
+
+5.If need edit the /etc/hosts file for RMI Connection
+
+		yourIP hostname
+		ATCSServerIP ATCSServer_hostname 
+	
+	-----Eg: 192.168.2.200 user13-desktop 
+		 192.168.2.230 AtcsServer
+6. Confirm whether the ATCSServer is running 
+
+6. Run ATCSDatalogger by 
+
+	---#	sudo ./ATCSSetup.sh
+
+/******** END OF DOCUMENT *****************************************/
+	

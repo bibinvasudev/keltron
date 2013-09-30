@@ -1,0 +1,67 @@
+
+******************************************************************
+/*								*/
+/*	VTFMSSERVER SIMULATION WORKING DOCUMENTATION 		        */
+/*								*/
+/*								*/
+/*	Description:						*/
+/*	-------------------------------------------		*/
+/*	PROJECT : VTFMSSERVER SIMULATION [UDP] [CONTINUOUS ]
+						      [PYTHON]  */
+/*		  [PACKET FORMAT: X,Y,DIRECTION,TIME ]          */
+/*	                                                	*/
+/*	VERSION : 2.1 ( For Linux )				*/
+/*	LANGUAGE: Python                 			*/
+/*      DATE	: 28th AUGUST 2008				*/
+/*	AUTHOR	: BIBIN V					*/
+/*	-------------------------------------------		*/
+/*								*/
+******************************************************************
+
+
+IMPORTANT :	1.Read the instructions carefully
+		2.Do proper changes as specified
+
+                
+ 
+	Thank you !!!!
+
+**************************************************************************************
+
+
+
+1.Copy VTFMSSERVER_UDP_PYTHON_INFINITV2.1 to your system. Packet contains
+
+	---# 	vtfmsserver.py
+	---# 	dbaction.py
+	---# 	config.py
+	---# 	dbMyaction.py
+	---# 	packetResolver.py
+
+2. Check if Python is installed by just typing "whereis python" or "which python"
+		if you get "comand not found", install python
+3. Check if Postgres is installed by just typing "which psql"
+		if you get "commad not found",install postgresql-client
+4. Check if psycopg2 is installed by just typing "pg_config"
+		if you get "comand not found",install psycopg2
+5  Check if wxWidget is installed by just typing "wx-config"
+		if you get "comand not found",install python-wxglade
+
+6. vtfmsserver Simulation working
+
+	---#    vtfmsserver.py    :- Accept packets fromm clients			          
+	---#    config.py         :- Configurationn is done at config.py  
+	---#	dbactions.py      :- Database releated actions are takes place  
+	---#    vtfmscore.py      :- Find new coordinates and send that to the vtfms server.The packet format contains    x,y,directions,time etc.The PROTOCOL used is UDP .This process will repeat for a continuous intervel.	
+				    	
+
+7. How to run VTFMSSERVER SIMULATION 
+
+
+	---# 	root@user-desktop:/python vtfmsserver.py
+
+
+
+
+/******** END OF DOCUMENT *****************************************/
+	

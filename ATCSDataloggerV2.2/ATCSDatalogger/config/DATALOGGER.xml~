@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DATALOGGER>
+
+<ATCSSERVER IP="192.168.2.200" PORT="1089" />
+
+<ATCSDB IP="192.168.2.200" DRIVERCLASS = "org.postgresql.Driver" TYPE= "postgresql" DBNAME="atcs" USER="admin" PASSWORD = "password"/>
+
+</DATALOGGER>

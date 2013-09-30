@@ -1,0 +1,13 @@
+# DATABASE CONFIGURATIONS
+
+Host='192.168.2.10'
+User='jayapal'
+Pwd='password'
+Db='avtms_new'
+
+#VTFMSSERVER CONFIGURATION
+
+SERVERIP = '192.168.2.200'
+SERVERPORT = 5000
+
+
